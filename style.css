@@ -103,6 +103,7 @@ section .title::after{
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
+
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -215,7 +216,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "BIENVENUE";
 }
 .about .about-content .left{
     width: 45%;
@@ -269,7 +270,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "JE FOURNIS";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -306,7 +307,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "JE CONNAIS";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -380,7 +381,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "PARCOURS";
 }
 .teams .carousel .card{
     background: #222;
@@ -443,7 +444,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "RESTEZ ONLINE";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -684,11 +685,10 @@ footer span a:hover{
 
 .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+    font-size: 20px;
+    width: 50px;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 2px;
     border-radius: 50%;
   }
   
@@ -725,4 +725,13 @@ footer span a:hover{
     background: #125688;
     color: white;
   }
+
+  .music{
+      display: none;
+  }
+
+
   
+
+
+
