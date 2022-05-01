@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -15,6 +17,7 @@ $(document).ready(function(){
         }
     });
 
+    
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -71,3 +74,17 @@ $(document).ready(function(){
         }
     });
 });
+
+function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "<sender’s email address>",
+	Password : "<email password>",
+	To : '<recipient’s email address>',
+	From : "<sender’s email address>",
+	Subject : "<email subject>",
+	Body : "<email body>",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
