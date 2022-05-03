@@ -1,1 +1,98 @@
-function _0x6bd4(_0x2707cb,_0x33a0b1){var _0x276815=_0x2768();return _0x6bd4=function(_0x6bd41d,_0x3d97c4){_0x6bd41d=_0x6bd41d-0x1e6;var _0x38f1de=_0x276815[_0x6bd41d];return _0x38f1de;},_0x6bd4(_0x2707cb,_0x33a0b1);}function _0x2768(){var _0x29034f=['.menu-btn','<email\x20body>','animate','toggleClass','.navbar\x20.menu','Développeur','<sender’s\x20email\x20address>','Full\x20Stack','.typing','Junior','removeClass','.typing-2','12884640sNosFR','scroll','smtp.gmail.com','scrollBehavior','999684cwVhPZ','6919997plmGjB','sticky','.navbar\x20.menu\x20li\x20a','addClass','.navbar','.menu-btn\x20i','active','<email\x20subject>','css','34503rKskIW','66PtoZKu','.scroll-up-btn','<email\x20password>','56VfWAKp','2538080vZpgJA','146155CIOJnI','click','173455PTqBKh','scrollY','html','10atCuiT','show','send','then'];_0x2768=function(){return _0x29034f;};return _0x2768();}(function(_0x2d8d12,_0x4e66fb){var _0x5be574=_0x6bd4,_0xcbd51d=_0x2d8d12();while(!![]){try{var _0x4f874b=parseInt(_0x5be574(0x1ea))/0x1*(-parseInt(_0x5be574(0x1ed))/0x2)+-parseInt(_0x5be574(0x20b))/0x3*(parseInt(_0x5be574(0x1e6))/0x4)+-parseInt(_0x5be574(0x1e8))/0x5*(parseInt(_0x5be574(0x20c))/0x6)+parseInt(_0x5be574(0x202))/0x7+-parseInt(_0x5be574(0x1e7))/0x8+-parseInt(_0x5be574(0x201))/0x9+parseInt(_0x5be574(0x1fd))/0xa;if(_0x4f874b===_0x4e66fb)break;else _0xcbd51d['push'](_0xcbd51d['shift']());}catch(_0x498973){_0xcbd51d['push'](_0xcbd51d['shift']());}}}(_0x2768,0x79cb5),$(document)['ready'](function(){var _0x2ba49e=_0x6bd4;$(window)[_0x2ba49e(0x1fe)](function(){var _0x1f008f=_0x2ba49e;this[_0x1f008f(0x1eb)]>0x14?$(_0x1f008f(0x206))['addClass'](_0x1f008f(0x203)):$('.navbar')[_0x1f008f(0x1fb)](_0x1f008f(0x203)),this['scrollY']>0x1f4?$('.scroll-up-btn')[_0x1f008f(0x205)](_0x1f008f(0x1ee)):$('.scroll-up-btn')[_0x1f008f(0x1fb)](_0x1f008f(0x1ee));}),$(_0x2ba49e(0x20d))[_0x2ba49e(0x1e9)](function(){var _0x12a2e3=_0x2ba49e;$(_0x12a2e3(0x1ec))[_0x12a2e3(0x1f3)]({'scrollTop':0x0}),$('html')[_0x12a2e3(0x20a)](_0x12a2e3(0x200),'auto');}),$(_0x2ba49e(0x204))[_0x2ba49e(0x1e9)](function(){var _0xc0d077=_0x2ba49e;$(_0xc0d077(0x1ec))[_0xc0d077(0x20a)](_0xc0d077(0x200),'smooth');}),$(_0x2ba49e(0x1f1))['click'](function(){var _0x493795=_0x2ba49e;$(_0x493795(0x1f5))[_0x493795(0x1f4)](_0x493795(0x208)),$(_0x493795(0x207))['toggleClass'](_0x493795(0x208));});var _0x1ceb7e=new Typed(_0x2ba49e(0x1f9),{'strings':[_0x2ba49e(0x1f6),'Web',_0x2ba49e(0x1f8),'Junior'],'typeSpeed':0x64,'backSpeed':0x3c,'loop':!![]}),_0x1ceb7e=new Typed(_0x2ba49e(0x1fc),{'strings':[_0x2ba49e(0x1f6),'Web',_0x2ba49e(0x1f8),_0x2ba49e(0x1fa)],'typeSpeed':0x64,'backSpeed':0x3c,'loop':!![]});$('.carousel')['owlCarousel']({'margin':0x14,'loop':!![],'autoplay':!![],'autoplayTimeOut':0x7d0,'autoplayHoverPause':!![],'responsive':{0x0:{'items':0x1,'nav':![]},0x258:{'items':0x2,'nav':![]},0x3e8:{'items':0x3,'nav':![]}}});}));function sendEmail(){var _0x20ec68=_0x6bd4;Email[_0x20ec68(0x1ef)]({'Host':_0x20ec68(0x1ff),'Username':_0x20ec68(0x1f7),'Password':_0x20ec68(0x20e),'To':'<recipient’s\x20email\x20address>','From':_0x20ec68(0x1f7),'Subject':_0x20ec68(0x209),'Body':_0x20ec68(0x1f2)})[_0x20ec68(0x1f0)](_0xcb577d=>alert('mail\x20sent\x20successfully'));}
+
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+        
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+
+    
+    // slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Développeur", "Web", "Full Stack", "Junior"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Développeur", "Web", "Full Stack", "Junior"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+    });
+});
+
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click',function(e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var sub = document.getElementById('sub').value;
+        var message = document.getElementById('message').value;
+        var body = 'name: ' +name+ '<br/> email: ' + email + '<br/> subject: '  + sub + '<br/> message: '  + message;
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ahmedohafsi@gmail.com",
+    Password : "hqyxgwrpxewzhawu",
+    To : 'ahmedohafsi@gmail.com',
+    From : email,
+    Subject : sub,
+    Body : body
+}).then(
+  
+);
+
+    });
