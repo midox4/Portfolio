@@ -92,7 +92,8 @@ $(document).ready(function(){
     Subject : sub,
     Body : body
 }).then(
-  
+        message => alert('mail recu')
+
 );
 
     });
