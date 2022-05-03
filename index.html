@@ -340,21 +340,21 @@ Un développeur junior enthousiaste, concentré et motivé avec plus d'un an d'e
 
                                             <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" id="name" required>
+                                <input type="text" placeholder="Name" id="name" required autocomplete="off">
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" id="email" required>
+                                <input type="email" placeholder="Email" id="email" required autocomplete="off">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" id="sub" required>
+                            <input type="text" placeholder="Subject" id="sub" required autocomplete="off">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.."  id="message" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.."  id="message" required autocomplete="off"></textarea>
                         </div>
                         <div class=" button-area">
 
-                            <button type="submit" value="submit" >Envoyer message</button>
+                            <button type="submit" class="btn" id="btn">Envoyer message</button>
 
                         </div>
                         <br>
@@ -376,19 +376,6 @@ Un développeur junior enthousiaste, concentré et motivé avec plus d'un an d'e
 
     </section>
 
-
-    
-
-    
-
-    
-
-
-
-
-
-
-
     <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
@@ -398,9 +385,6 @@ Un développeur junior enthousiaste, concentré et motivé avec plus d'un an d'e
             </div>
         </div>
     </footer>
-
-
-
     <script src="script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
