@@ -95,7 +95,7 @@ $(document).ready(function(){
     Body : body
     
 }).then(
-    message => alert('email reecuuuuu')
+    message => alert('Email Bien Reçu ! Bonne journée')
 
 );
 inputs.forEach(input => {
