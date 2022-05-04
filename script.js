@@ -75,9 +75,11 @@ $(document).ready(function(){
     });
 });
 
-        var btn = document.getElementById('btn');
+    var btn = document.getElementById('btn');
     btn.addEventListener('click',function(e){
-        e.preventDefault()
+        e.preventDefault();
+
+        const inputs = document.querySelectorAll('#name, #email, #sub, #message');
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var sub = document.getElementById('sub').value;
@@ -91,10 +93,58 @@ $(document).ready(function(){
     From : email,
     Subject : sub,
     Body : body
+    
 }).then(
     message => alert('email reecuuuuu')
 
 );
+inputs.forEach(input => {
+    input.value = '';
+  });
+});
 
-    });
+  
+
+// clear all text fields form 
+    const form = document.querySelector('#myF');
+    const usernameEl = document.querySelector('#name');
+    const email = document.querySelector('#email');
+    const sub = document.querySelector('#sub');
+    const msg = document.querySelector('#message');
+
+    const checkUsername = () => {
+
+        let valid = false;
+    
+        const min = 3,
+            max = 25;
+    
+        const username = usernameEl.value.trim();
+    
+        if (!isRequired(username)) {
+            showError(usernameEl, 'Username cannot be blank.');
+        } else if (!isBetween(username.length, min, max)) {
+            showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+        } else {
+            showSuccess(usernameEl);
+            valid = true;
+        }
+        return valid;
+    };
+    
+    
+    const checkEmail = () => {
+        let valid = false;
+        const email = emailEl.value.trim();
+        if (!isRequired(email)) {
+            showError(emailEl, 'Email cannot be blank.');
+        } else if (!isEmailValid(email)) {
+            showError(emailEl, 'Email is not valid.')
+        } else {
+            showSuccess(emailEl);
+            valid = true;
+        }
+        return valid;
+    };
+    
 
