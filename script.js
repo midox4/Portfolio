@@ -75,7 +75,7 @@ $(document).ready(function(){
     });
 });
 
-    var btn = document.getElementById('btn');
+        var btn = document.getElementById('btn');
     btn.addEventListener('click',function(e){
         e.preventDefault()
         var name = document.getElementById('name').value;
@@ -92,8 +92,9 @@ $(document).ready(function(){
     Subject : sub,
     Body : body
 }).then(
-        message => alert('mail recu')
+    message => alert('email reecuuuuu')
 
 );
 
     });
+
