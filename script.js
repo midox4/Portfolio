@@ -107,7 +107,7 @@ inputs.forEach(input => {
 
 // clear all text fields form 
     const form = document.querySelector('#myF');
-    const usernameEl = document.querySelector('#name');
+    const name = document.querySelector('#name');
     const email = document.querySelector('#email');
     const sub = document.querySelector('#sub');
     const msg = document.querySelector('#message');
@@ -119,14 +119,14 @@ inputs.forEach(input => {
         const min = 3,
             max = 25;
     
-        const username = usernameEl.value.trim();
+        const username = name.value.trim();
     
         if (!isRequired(username)) {
-            showError(usernameEl, 'Username cannot be blank.');
+            showError(name, 'Username cannot be blank.');
         } else if (!isBetween(username.length, min, max)) {
-            showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+            showError(name, `Username must be between ${min} and ${max} characters.`)
         } else {
-            showSuccess(usernameEl);
+            showSuccess(name);
             valid = true;
         }
         return valid;
@@ -135,13 +135,13 @@ inputs.forEach(input => {
     
     const checkEmail = () => {
         let valid = false;
-        const email = emailEl.value.trim();
+        const email = email.value.trim();
         if (!isRequired(email)) {
-            showError(emailEl, 'Email cannot be blank.');
+            showError(email, 'Email cannot be blank.');
         } else if (!isEmailValid(email)) {
-            showError(emailEl, 'Email is not valid.')
+            showError(email, 'Email is not valid.')
         } else {
-            showSuccess(emailEl);
+            showSuccess(email);
             valid = true;
         }
         return valid;
