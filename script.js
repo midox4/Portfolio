@@ -78,6 +78,9 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function() {
+  $("#myF").validate();
+});
 
 
     var btn = document.getElementById('btn');
