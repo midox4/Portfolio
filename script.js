@@ -75,6 +75,32 @@ $(document).ready(function(){
     });
 });
 
+function validateform(){  
+    var name=document.myForm.name.value;  
+        var email=document.myForm.email.value;  
+    var sub=document.myForm.sub.value;  
+var message=document.myForm.message.value;  
+  
+if (name==null || name==""){  
+  alert("veuillez écrire votre nom ");  
+  return false;  
+}else if (email==null || email==""){  
+ 
+  alert("Svp mettez votre Email.");  
+  return false;  
+  } else if (sub==null || sub==""){  
+ 
+  alert("Svp mettez votre sujet."); 
+  return false;  
+
+  } else if (message==null || message==""){
+       alert("Svp écrire votre message."); 
+ 
+  return false;  
+  }  
+  } 
+
+
         var btn = document.getElementById('btn');
         btn.addEventListener('click',function(e){
             e.preventDefault();
