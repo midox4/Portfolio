@@ -75,6 +75,11 @@ $(document).ready(function(){
     });
 });
 
+
+
+
+
+
     var btn = document.getElementById('btn');
     btn.addEventListener('click',function(e){
         e.preventDefault();
@@ -108,32 +113,8 @@ inputs.forEach(input => {
 // clear all text fields form 
 
 
-function validateForm() {
-  let x = document.forms["myForm"]["name"].value;
-  let y = document.forms["myForm"]["email"].value;  
-  let z = document.forms["myForm"]["sub"].value;
-  let w = document.forms["myForm"]["msg"].value;
 
-  if (x == "") {
-    alert("Veuillez Mettre Votre Nom et Prénom");
-    return false;
-  }else if (y == ""){
-          alert("Veuillez saisir Votre Email !");
-    return false; 
-  }else if (z ==""){
-  
-      alert("Veuillez écrire Votre Sujet");
-    return false;
-
-  }else if (w==""){
-  
-      alert("Veuillez écrire Votre message !");
-    return false;
-
-  }
-       
-}
-
+/*
 
     const form = document.querySelector('#myF');
     const name = document.querySelector('#name');
@@ -176,4 +157,4 @@ function validateForm() {
         return valid;
     };
     
-
+*/
