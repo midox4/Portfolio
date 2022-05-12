@@ -379,14 +379,14 @@ Conception et architecture d’une application web E-commerce basée sur une sol
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="POST" name="myForm" id="myF" onsubmit="return validateForm()">
+                    <form method="POST" name="myForm" id="myF">
 
                                             <div class="fields">
                             <div class="field name">
-                                <input onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" name="name" id="name" >
+                                <input onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" name="name" id="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Your Email" id="email"  name="email" >
+                                <input type="email" placeholder="Your Email" id="email"  name="email" required>
                             </div>
                         </div>
                         <div class="field">
