@@ -279,7 +279,7 @@ Conception et architecture d’une application web E-commerce basée sur une sol
                 <div class="card">
                     <div class="box">
                         <img src="images/dev.jpeg" alt="">
-                        <div class="text">Developpement Application Web</div>
+                        <div class="text">Developpement Application Web <br>2020</div>
                         <p>
                             Développement d’une application web pour gestion des congés de personnels avec nodeJs, expressJS et MongoDB 
                         <a href="https://www.youtube.com/watch?v=OZ2EsHQkhp8&feature=youtu.be" style="color: chartreuse;" >VOIR YOUTUBE</a>                       </p>
@@ -347,21 +347,21 @@ Conception et architecture d’une application web E-commerce basée sur une sol
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="POST" name="myForm" id="myF">
+                    <form method="POST" name="myForm" id="myF" onsubmit="return validateForm()">
 
                                             <div class="fields">
                             <div class="field name">
-                                <input onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" id="name" required>
+                                <input onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" name="name" id="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Your Email" id="email" required>
+                                <input type="email" placeholder="Your Email" id="email"  name="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" id="sub" required>
+                            <input type="text" placeholder="Subject" id="sub"  name="sub" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Write a Message.."  id="message" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Write a Message.."  id="message"  name="msg" required></textarea>
                         </div>
                         <div class=" button-area">
                             <button class="w-6  btn"  id="btn">Envoyer </button>
