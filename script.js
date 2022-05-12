@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 
 
-
+/*
 
     var btn = document.getElementById('btn');
     btn.addEventListener('click',function(e){
@@ -108,6 +108,33 @@ inputs.forEach(input => {
   });
 });
 
-  
+ */
+
+            const inputs = document.querySelectorAll('#name, #email, #sub, #message');
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var sub = document.getElementById('sub').value;
+            var message = document.getElementById('message').value;
+            var body = 'name: ' +name+ '<br/> email: ' +email+ '<br/> subject: '  +sub+ '<br/> message: '  + message;
+
+		function sendEmail() {
+			Email.send({
+			        Host : "smtp.gmail.com",
+        Username : "ahmedohafsi@gmail.com",
+        Password : "hqyxgwrpxewzhawu",
+        To : 'ahmedohafsi@gmail.com',
+        From : email,
+        Subject : sub,
+        Body : body
+})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+          inputs.forEach(input => {
+        input.value = '';
+    });
+   
+		}
+
 
 
