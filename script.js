@@ -109,6 +109,8 @@ inputs.forEach(input => {
 });
 
  */
+        btn.addEventListener('click',function(e){
+            e.preventDefault();
 
             const inputs = document.querySelectorAll('#name, #email, #sub, #message');
             var name = document.getElementById('name').value;
@@ -117,7 +119,7 @@ inputs.forEach(input => {
             var message = document.getElementById('message').value;
             var body = 'name: ' +name+ '<br/> email: ' +email+ '<br/> subject: '  +sub+ '<br/> message: '  + message;
 
-		function sendEmail() {
+		
 			Email.send({
 			        Host : "smtp.gmail.com",
         Username : "ahmedohafsi@gmail.com",
@@ -135,6 +137,6 @@ inputs.forEach(input => {
     });
    
 		}
-
+});
 
 
