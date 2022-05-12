@@ -78,9 +78,6 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function() {
-  $("#myF").validate();
-});
 
 
     var btn = document.getElementById('btn');
@@ -96,7 +93,7 @@ $(document).ready(function() {
         Email.send({
     Host : "smtp.gmail.com",
     Username : "ahmedohafsi@gmail.com",
-    Password : "hqyxgwrpxewzhawu",
+    Password : "saezogavdharzdud",
     To : 'ahmedohafsi@gmail.com',
     From : email,
     Subject : sub,
@@ -113,51 +110,4 @@ inputs.forEach(input => {
 
   
 
-// clear all text fields form 
 
-
-
-/*
-
-    const form = document.querySelector('#myF');
-    const name = document.querySelector('#name');
-    const email = document.querySelector('#email');
-    const sub = document.querySelector('#sub');
-    const msg = document.querySelector('#message');
-
-    const checkUsername = () => {
-
-        let valid = false;
-    
-        const min = 3,
-            max = 25;
-    
-        const username = name.value.trim();
-    
-        if (!isRequired(username)) {
-            showError(name, 'Username cannot be blank.');
-        } else if (!isBetween(username.length, min, max)) {
-            showError(name, `Username must be between ${min} and ${max} characters.`)
-        } else {
-            showSuccess(name);
-            valid = true;
-        }
-        return valid;
-    };
-    
-    
-    const checkEmail = () => {
-        let valid = false;
-        const email = email.value.trim();
-        if (!isRequired(email)) {
-            showError(email, 'Email cannot be blank.');
-        } else if (!isEmailValid(email)) {
-            showError(email, 'Email is not valid.')
-        } else {
-            showSuccess(email);
-            valid = true;
-        }
-        return valid;
-    };
-    
-*/
