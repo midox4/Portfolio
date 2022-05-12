@@ -324,7 +324,7 @@ Développement d’une application web PHP gestion de bibliothéque permet d'ajo
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form method="POST" name="myForm" id="myF">
+                    <form method="POST" name="myForm" id="myF" onsubmit="return validateform()">
 
                                             <div class="fields">
                             <div class="field name">
@@ -341,7 +341,7 @@ Développement d’une application web PHP gestion de bibliothéque permet d'ajo
                             <textarea cols="30" rows="10" placeholder="Write a Message.."  id="message" ></textarea>
                         </div>
                         <div class=" button-area">
-                            <button class="w-6  btn"  id="btn">Envoyer </button>
+                            <button  type="submit" class="w-6  btn"  id="btn">Envoyer </button>
 
 
                         </div>
