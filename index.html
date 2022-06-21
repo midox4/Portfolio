@@ -334,37 +334,9 @@ Premier application web pour gestion bibliothèque CRUD réaliser avec (Php, Htm
                             <textarea cols="30" rows="10" name="area" placeholder="Write a Message.."  id="message" ></textarea>
                         </div>
                         <div class=" button-area">
-                            <button  type="submit" class="w-6  btn"  id="btn" onClick="checkform();">Envoyer </button>
+                            <button  type="submit" class="w-6  btn"  id="btn" onClick="validateform();">Envoyer </button>
                         </div>
-                        
-                        <script>
-                            function checkform() {
-    if(document.myForm.name.value == "") {
-        alert("SVP entrer votre Nom :");
-        return false;
-    } elseif (document.myForm.email.value == ""){
-     alert("SVP entrer votre Email :");
-        return false;
-    
-    }elseif (document.myForm.sub.value == "") {
-    
-      alert("SVP entrer votre Sujet :");
-        return false;
-    
-    } elseif (document.myForm.area.value == ""){
-    
-     alert("SVP entrer votre text :");
-        return false;
-    
-    } else {
-        document.myForm.submit();
-    }
-}
-                                
-
-                        </script>
-
-                        
+                 
 
                         
                     </form>
@@ -405,5 +377,32 @@ Premier application web pour gestion bibliothèque CRUD réaliser avec (Php, Htm
 </body>
 
 </html>
+<!--              /*       
+                        <script>
+                            function checkform() {
+    if(document.myForm.name.value == "") {
+        alert("SVP entrer votre Nom :");
+        return false;
+    } elseif (document.myForm.email.value == ""){
+     alert("SVP entrer votre Email :");
+        return false;
+    
+    }elseif (document.myForm.sub.value == "") {
+    
+      alert("SVP entrer votre Sujet :");
+        return false;
+    
+    } elseif (document.myForm.area.value == ""){
+    
+     alert("SVP entrer votre text :");
+        return false;
+    
+    } else {
+        document.myForm.submit();
+    }
+}
+                                
 
+                        </script>
 
+          */ -->
