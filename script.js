@@ -38,14 +38,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Développeur", "Web Full", "Stack JS", "Tunisien","Passionné par le coding"],
+        strings: ["Développeur Web", "Full Stack JS", "Tunisien","Passionné par le Coding"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Développeur", "Web Full", "Stack JS", "Tunisien","Passionné par le coding"],
+        strings: ["Développeur Web", "Full Stack JS", "Tunisien","Passionné par le Coding"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
