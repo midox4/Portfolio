@@ -101,31 +101,38 @@ if (name==null || name==""){
   } 
 
 
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click',function(e){
+       const form = document.querySelectorAll('.form');
+        function sendMSg(e){
             e.preventDefault();
 
-            const inputs = document.querySelectorAll('#name, #email, #sub, #message');
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var sub = document.getElementById('sub').value;
-            var message = document.getElementById('message').value;
-            var body = 'name: ' +name+ '<br/> email: ' +email+ '<br/> subject: '  +sub+ '<br/> message: '  + message;
+           
+           const name = document.querySelectorAll('.name');
+           const email = document.querySelectorAll('.email');
+          const  sub = document.querySelectorAll('.sub');
+           const mssg = document.querySelectorAll('.message');
+            
+            
+         
+           
             Email.send({
         Host : "smtp.gmail.com",
         Username : "ahmedohafsi@gmail.com",
         Password : "lhabutzjyiwnezux",
         To : 'ahmedohafsi@gmail.com',
-        From : email,
-        Subject : sub,
-        Body : body
+        From : email.value,
+        Subject : sub.value,
+        Body : mssg.value
         
     }).then(
         message => alert('Email Bien Reçu ! Bonne journée')
 
     );
-  
+            form.forEach(input => {
+        input.value = '';
     });
+  
+    };
+form.addEventListener('submit',sendMSg);
 
   
 /*
