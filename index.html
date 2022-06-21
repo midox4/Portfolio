@@ -317,24 +317,24 @@ Premier application web pour gestion bibliothèque CRUD réaliser avec (Php, Htm
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form  class="form" name="myForm"  >
+                    <form  class="form" name="myForm" onClick="validateform();" >
 
                                             <div class="fields">
                             <div class="field name">
-                                <input onkeydown="return /[a-z]/i.test(event.key)" name="name" placeholder="Name" id="name" required>
+                                <input onkeydown="return /[a-z]/i.test(event.key)" name="name" placeholder="Name" class="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" name="email" placeholder="Your Email" id="email" >
+                                <input type="email" name="email" placeholder="Your Email" class="email" >
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" name="sub" placeholder="Subject" id="sub" >
+                            <input type="text" name="sub" placeholder="Subject" class="sub" >
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" name="area" placeholder="Write a Message.."  id="message" ></textarea>
+                            <textarea cols="30" rows="10" name="area" placeholder="Write a Message.."  class="message" ></textarea>
                         </div>
                         <div class=" button-area">
-                            <button  type="submit" class="w-6  btn"  id="btn" onClick="validateform();">Envoyer </button>
+                            <button  type="submit" class="w-6  btn"  id="btn" >Envoyer </button>
                         </div>
                  
 
