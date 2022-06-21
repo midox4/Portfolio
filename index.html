@@ -321,23 +321,48 @@ Premier application web pour gestion bibliothèque CRUD réaliser avec (Php, Htm
 
                                             <div class="fields">
                             <div class="field name">
-                                <input onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" id="name" required>
+                                <input onkeydown="return /[a-z]/i.test(event.key)" name="name" placeholder="Name" id="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Your Email" id="email" >
+                                <input type="email" name="email" placeholder="Your Email" id="email" >
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" id="sub" >
+                            <input type="text" name="sub" placeholder="Subject" id="sub" >
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Write a Message.."  id="message" ></textarea>
+                            <textarea cols="30" rows="10" name="area" placeholder="Write a Message.."  id="message" ></textarea>
                         </div>
                         <div class=" button-area">
-                            <button  type="submit" class="w-6  btn"  id="btn">Envoyer </button>
-
-
+                            <button  type="submit" class="w-6  btn"  id="btn" onClick="checkform();">Envoyer </button>
                         </div>
+                        
+                        <script>
+                            function checkform() {
+    if(document.myForm.name.value == "") {
+        alert("SVP entrer votre Nom :");
+        return false;
+    } elseif (document.myForm.email.value == ""){
+     alert("SVP entrer votre Email :");
+        return false;
+    
+    }elseif (document.myForm.sub.value == "") {
+    
+      alert("SVP entrer votre Sujet :");
+        return false;
+    
+    } elseif (document.myForm.area.value == ""){
+    
+     alert("SVP entrer votre text :");
+        return false;
+    
+    } else {
+        document.myForm.submit();
+    }
+}
+                                
+
+                        </script>
 
                         
 
