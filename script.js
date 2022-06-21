@@ -114,7 +114,7 @@ if (name==null || name==""){
             Email.send({
         Host : "smtp.gmail.com",
         Username : "ahmedohafsi@gmail.com",
-        Password : "qbhvtudrwwnoeupf",
+        Password : "lhabutzjyiwnezux",
         To : 'ahmedohafsi@gmail.com',
         From : email,
         Subject : sub,
@@ -124,9 +124,7 @@ if (name==null || name==""){
         message => alert('Email Bien Reçu ! Bonne journée')
 
     );
-    inputs.forEach(input => {
-        input.value = '';
-    });
+  
     });
 
   
