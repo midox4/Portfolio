@@ -120,6 +120,7 @@ if (name==null || name==""){
         Password : "lhabutzjyiwnezux",
         To : 'ahmedohafsi@gmail.com',
         From : email.value,
+        Name:name.value,
         Subject : sub.value,
         Body : mssg.value
         
