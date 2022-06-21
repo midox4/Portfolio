@@ -134,6 +134,7 @@ if (name==null || name==""){
   
     };
 form.addEventListener('submit',sendMSg);
+form.addEventListener('submit',validateform);
 
   
 /*
